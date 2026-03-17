@@ -8,13 +8,24 @@
   </head>
   <body>
     <header>
-      <nav class="nav">
+      <!-- <div class="nav-content">
+        <div class="nav-items">
+          <p class="nav-item">Über mich</p>
+          <p class="nav-item">Kurse</p>
+          <p class="nav-item">Kontakt</p>
+        </div>
+        <div class="nav-close">
+          <button class="nav-close-button">X</button>
+        </div>
+      </div> -->
+      <nav onclick="openNav()" class="nav">
         <div class="burger">
           <div class="burger-item"></div>
           <div class="burger-item"></div>
           <div class="burger-item"></div>
         </div>
       </nav>
+      <div class="nav-container"></div>
       <section class="hero">
         <h1 class="title">Dein Klang<br />in Balance</h1>
         <p class="subtitle">
@@ -30,5 +41,7 @@
       </section>
     </header>
     <div class="platzhalter"></div>
+
+    <script src="main.js"></script>
   </body>
 </html>

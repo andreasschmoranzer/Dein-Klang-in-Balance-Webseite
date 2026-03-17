@@ -15,6 +15,43 @@ body {
   font-family: "Cormorant Garamond", serif;
 }
 
+.nav-content {
+  height: 70vh;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 2rem 2rem 0 2rem;
+  transition: 1s all ease;
+}
+
+.nav-items {
+  height: 80%;
+}
+
+.nav-item {
+  font-size: 2rem;
+}
+
+.nav-close {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-close-button {
+  font-size: 1rem;
+  color: var(--primary-color);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.nav-item:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
 .nav {
   background-color: var(--primary-color);
   height: 5rem;
@@ -100,6 +137,13 @@ body {
 }
 
 @media only screen and (min-width: 1000px) {
+  .title {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
   .title {
     font-size: 6rem;
     line-height: 6rem;
