@@ -45,7 +45,7 @@ body {
 
 #nav-menu {
   position: fixed;
-  /* display: none; */
+  display: none;
   height: 70vh;
   width: 100%;
   z-index: 1;
@@ -87,7 +87,7 @@ body {
 }
 
 .hero {
-  height: calc(100vh - 5rem);
+  height: calc(90vh - 5rem);
   background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
@@ -124,17 +124,48 @@ body {
   transition: 0.2s all ease-in-out;
 }
 
-.image-hero {
-  height: 40%;
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.image-about {
   width: 80%;
+  height: 30rem;
   border-radius: 2rem;
   object-fit: cover;
-  margin: 2rem 0;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+  text-align: center;
+}
+
+.section-text {
+  font-size: 1rem;
+}
+
+.about .title {
+  font-size: 2rem;
+  line-height: 2rem;
 }
 
 .platzhalter {
   height: 100rem;
-  background-color: white;
+  background-color: var(--primary-color);
 }
 
 @media only screen and (min-width: 600px) {
@@ -145,6 +176,15 @@ body {
 
   .subtitle {
     font-size: 1.5rem;
+  }
+
+  .about-content {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .image-about {
+    max-width: 50%;
   }
 }
 
@@ -163,6 +203,11 @@ body {
   .title {
     font-size: 6rem;
     line-height: 6rem;
+  }
+
+  .image-about {
+    max-width: 40%;
+    height: 40rem;
   }
 }
 
