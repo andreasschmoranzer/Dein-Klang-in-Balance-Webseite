@@ -8,6 +8,9 @@
 :root {
   --primary-color: rgb(255, 215, 188);
   --secondary-color: rgb(42, 42, 42);
+  --secondary-color-rgb: 42, 42, 42;
+  --container-width: 90%;
+  --border-images-radius: 2rem;
 }
 
 body {
@@ -16,15 +19,20 @@ body {
   font-family: "Cormorant Garamond", serif;
 }
 
+/* .dp_fl_co_ce {
+
+} */
+
 .nav {
   background-color: var(--primary-color);
   height: 5rem;
+  width: var(--container-width);
+  margin: 0 auto;
   display: flex;
   align-items: center;
 }
 
 .burger {
-  margin-left: 2rem;
   transition: 0.2s all ease-in-out;
 }
 
@@ -87,7 +95,7 @@ body {
 }
 
 .hero {
-  height: calc(90vh - 5rem);
+  height: calc(100vh - 5rem);
   background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
@@ -125,8 +133,8 @@ body {
 }
 
 .container {
-  width: 90%;
-  margin: 0 auto;
+  width: var(--container-width);
+  margin: 1rem auto;
 }
 
 .about-content {
@@ -140,7 +148,7 @@ body {
 .image-about {
   width: 80%;
   height: 30rem;
-  border-radius: 2rem;
+  border-radius: var(--border-images-radius);
   object-fit: cover;
 }
 
@@ -149,7 +157,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   width: 80%;
   text-align: center;
 }
@@ -161,6 +169,41 @@ body {
 .about .title {
   font-size: 2rem;
   line-height: 2rem;
+}
+
+.categories-content,
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.category-card {
+  width: 80%;
+  height: 30rem;
+  border-radius: var(--border-images-radius);
+  justify-content: flex-end;
+}
+
+.portrait,
+.course {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.portrait {
+  background-image: url(img/portrait.jpeg);
+}
+
+.course {
+  background-image: url(img/mehr.jpeg);
+}
+
+.category-card .btn {
+  background-color: rgba(var(--secondary-color-rgb), 0.8);
+  margin-bottom: 6rem;
 }
 
 .platzhalter {
@@ -205,9 +248,16 @@ body {
     line-height: 6rem;
   }
 
+  .about-content {
+    gap: 6rem;
+  }
+
   .image-about {
-    max-width: 40%;
-    height: 40rem;
+    width: 25rem;
+  }
+
+  .about-text {
+    max-width: 30%;
   }
 }
 

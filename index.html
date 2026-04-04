@@ -8,8 +8,8 @@
   </head>
   <body>
     <header class="header">
-      <nav onclick="overlayOn()" class="nav">
-        <div class="burger">
+      <nav class="nav">
+        <div id="nav-open" class="burger">
           <div class="burger-item"></div>
           <div class="burger-item"></div>
           <div class="burger-item"></div>
@@ -17,11 +17,12 @@
       </nav>
       <div id="nav-menu">
         <div class="nav-parent">
+          <a href="#" class="nav-item">Erfahre Mehr</a>
+          <a href="#" class="nav-item">Angebot</a>
           <a href="#" class="nav-item">Über mich</a>
-          <a href="#" class="nav-item">Kurse</a>
           <a href="#" class="nav-item">Kontakt</a>
         </div>
-        <div onclick="overlayOff()" id="nav-close">
+        <div id="nav-close">
           <button class="nav-close-button">X</button>
         </div>
       </div>
@@ -51,6 +52,16 @@
               Grund sind, jeder auf seiner einzigarten Art und Weise.
             </p>
             <h2 class="title">Liebe Grüße<br />Deine Sabine</h2>
+          </div>
+        </div>
+      </section>
+      <section id="categories" class="categories container">
+        <div class="categories-content">
+          <div class="category-card portrait">
+            <a href="#" class="btn">Über Mich</a>
+          </div>
+          <div class="category-card course">
+            <a href="#" class="btn">Astriologie</a>
           </div>
         </div>
       </section>
